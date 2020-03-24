@@ -15,6 +15,9 @@ public class MyMain {
     public static void main(String[] args) {
         MyPriorityQueue queue = new MyPriorityQueue();
         queue.enqueue(new Student("Tushar",58));
+        queue.enqueue(new Student("Tanishq",23));
+        queue.enqueue(new Student("Pavit",65));
+        queue.show();
 
     }
 }
