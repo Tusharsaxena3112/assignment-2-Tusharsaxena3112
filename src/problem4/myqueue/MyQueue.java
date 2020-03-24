@@ -7,6 +7,19 @@
 package problem4.myqueue;
 // to create queue to store pre - order successor
 
-public class MyQueue {
+import problem4.linkedList.MyLinkedList;
 
+public class MyQueue {
+    MyLinkedList linkedList = new MyLinkedList();
+    public void enqueue(int data){
+        linkedList.addLast(data);
+    }
+
+    public void dequeue(){
+        linkedList.deleteFirst();
+    }
+
+    public void show(){
+        linkedList.display();
+    }
 }
