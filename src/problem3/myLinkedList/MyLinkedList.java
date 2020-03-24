@@ -16,10 +16,14 @@ public class MyLinkedList {
         last.setNext(node);
         last=node;
 
-        if(node.getData().getRollNo()<first.getData().getRollNo()) {
-            var temp = node.getData();
-            node.setData(first.getData());
-            first.setData(temp);
+        var current = first;
+        while(current!=null){
+            if(node.getData().getRollNo()<current.getData().getRollNo()) {
+                var temp = node.getData();
+                node.setData(current.getData());
+                current.setData(temp);
+            }
+            current= current.getNext();
         }
     }
 
