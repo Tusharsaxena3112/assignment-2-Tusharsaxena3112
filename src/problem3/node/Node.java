@@ -5,21 +5,21 @@
  *  Time: 7:13 PM
  */
 package problem3.node;
-
+import problem3.student.Student;
 public class Node {
-    private int data;
+    private Student data;
     private Node next;
 
-    public Node(int data){
+    public Node(Student data){
         this.data=data;
         this.next=null;
     }
 
-    public int getData() {
+    public Student getData() {
         return data;
     }
 
-    public void setData(int data) {
+    public void setData(Student data) {
         this.data = data;
     }
 
