@@ -31,4 +31,31 @@ public class MyLinkedList {
             current = current.getNext();
         }
     }
+
+    public Node getFirst() {
+        return first;
+    }
+
+    public void setFirst(Node first) {
+        this.first = first;
+    }
+
+    public Node getLast() {
+        return last;
+    }
+
+    public void setLast(Node last) {
+        this.last = last;
+    }
+
+    public Node search(int data){
+        var current = first;
+        while(current!=null ){
+            if(current.getData()==data){
+                return current;
+            }
+            current=current.getNext();
+        }
+        return null;
+    }
 }
