@@ -6,20 +6,23 @@
  */
 package problem4.main;
 
-import problem1.mybst.MyBinarySearchTree;
+import problem4.binaryST.MyBinarySearchTree;
+import problem4.myqueue.MyQueue;
 
 // executable class
 // use problem1.mybst.MyBinarySearchTree class for creating binary tree
 public class MyMain {
     public static void main(String[] args) {
-        MyBinarySearchTree binarySearchTree  = new MyBinarySearchTree();
-        binarySearchTree.insert(10);
-        binarySearchTree.insert(20);
-        binarySearchTree.insert(3);
-        binarySearchTree.insert(30);
-        binarySearchTree.insert(15);
-
-
+        MyQueue myQueue = new MyQueue();
+        MyBinarySearchTree myBinarySearchTree = new MyBinarySearchTree(myQueue);
+        myBinarySearchTree.insert(10);
+        myBinarySearchTree.insert(20);
+        myBinarySearchTree.insert(3);
+        myBinarySearchTree.insert(30);
+        myBinarySearchTree.insert(15);
+        myBinarySearchTree.preOrder(myBinarySearchTree.getRoot());
+        System.out.println("PreOrder successors of all the nodes");
+        myQueue.show();
 
     }
 

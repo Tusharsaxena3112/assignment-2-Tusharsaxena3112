@@ -4,30 +4,31 @@ public class MyLinkedList {
     private Node first;
     private Node last;
 
-    public void addLast(int data){
+    public void addLast(int data) {
         Node node = new Node(data);
-        if(first==null){
-            first=last=node;
+        if (first == null) {
+            first = last = node;
             return;
         }
         last.setNext(node);
-        last=node;
+        last = node;
     }
 
-    public void deleteFirst(){
-        if(first==null){
-            first=last=null;
+    public void deleteFirst() {
+        if (first == null) {
+            first = last = null;
             return;
         }
         var second = first.getNext();
         first.setNext(null);
-        first=second;
+        first = second;
     }
 
-    public void display(){
+    public void display() {
         var current = first;
-        while(current!=null){
+        while (current != null) {
             System.out.println(current.getData());
-            current=current.getNext();
+            current = current.getNext();
         }
     }
+}
