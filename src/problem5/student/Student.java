@@ -42,4 +42,7 @@ public class Student {
         this.appearingCount = appearingCount;
     }
 
+    public String toString(){
+        return getName()+" "+getBackLog()+" "+getAppearingCount();
+    }
 }
