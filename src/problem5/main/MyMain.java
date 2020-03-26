@@ -23,13 +23,6 @@ public class MyMain {
                 myCircularQueue.enqueue(s);
             }
         }
-//        Student s=myCircularQueue.dequeue();
-//        Student s1 =myCircularQueue.dequeue();
-//        Student s2=myCircularQueue.dequeue();
-//        System.out.println(s);
-//        System.out.println(s1);
-//        System.out.println(s2);
-//        System.out.println();
         myCircularQueue.show();
     }
 }
